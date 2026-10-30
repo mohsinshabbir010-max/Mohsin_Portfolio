@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ch Mohsin | HR Manager and AI Automation Builder</title>
+<meta name="description" content="Ch Mohsin is an HR Manager in Pakistan who builds AI agents, automations and websites for businesses.">
+<meta property="og:title" content="Ch Mohsin | HR Manager and AI Automation Builder">
+<meta property="og:description" content="HR Manager who builds AI agents, automations and websites. Founder of NEXORA Software House.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#14213D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314213D'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='30' font-weight='700' text-anchor='middle' fill='%23F6F7F4'%3ECM%3C/text%3E%3Ccircle cx='50' cy='16' r='5' fill='%23E9A23B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout: one column of full-width bands; hero = headline left, live chat card right; left-aligned throughout */
+:root{
+  --paper:#F6F7F4; --paper-2:#ECEFEA; --surface:#FFFFFF;
+  --ink:#14213D; --ink-soft:#2B3A5C; --muted:#5B6475; --line:#D6DBE1;
+  --btn-bg:#14213D; --btn-fg:#F6F7F4;
+  --green:#2E7D5B; --green-hover:#246649; --green-soft:#DCEDE3; --on-green:#FFFFFF;
+  --marigold:#E9A23B; --on-marigold:#14213D;
+  --done-bg:#2E7D5B; --done-fg:#FFFFFF;
+  --bubble-in:#FFFFFF;
+  --band-bg:#14213D; --band-fg:#F6F7F4; --band-soft:#D5DBE8; --band-muted:#B9C2D6; --band-line:#33416A; --band-chip:#6B7AA3;
+  --i-hr-bg:#E4E8F2; --i-hr-fg:#14213D; --i-web-bg:#FBEBD2; --i-web-fg:#9A5E0B;
+  --display:"Bricolage Grotesque", "Segoe UI", Arial, sans-serif;
+  --body:"Schibsted Grotesk", "Segoe UI", Arial, sans-serif;
+  --wrap:1120px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0F1626; --paper-2:#172036; --surface:#18223A;
+    --ink:#E9EDF5; --ink-soft:#C3CBDC; --muted:#8E98AE; --line:#2A3550;
+    --btn-bg:#E9EDF5; --btn-fg:#0F1626;
+    --green:#4FB386; --green-hover:#6CC79D; --green-soft:#1B3A2E; --on-green:#0B1A13;
+    --marigold:#F0B353; --on-marigold:#14213D;
+    --done-bg:#2E7D5B; --done-fg:#FFFFFF;
+    --bubble-in:#1E2944;
+    --band-bg:#1A2644; --band-fg:#F2F4F8; --band-soft:#CDD5E5; --band-muted:#A3AEC6; --band-line:#33416A; --band-chip:#6B7AA3;
+    --i-hr-bg:#22304F; --i-hr-fg:#C9D3EA; --i-web-bg:#3A2C14; --i-web-fg:#F0B353;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0F1626; --paper-2:#172036; --surface:#18223A;
+  --ink:#E9EDF5; --ink-soft:#C3CBDC; --muted:#8E98AE; --line:#2A3550;
+  --btn-bg:#E9EDF5; --btn-fg:#0F1626;
+  --green:#4FB386; --green-hover:#6CC79D; --green-soft:#1B3A2E; --on-green:#0B1A13;
+  --marigold:#F0B353; --on-marigold:#14213D;
+  --done-bg:#2E7D5B; --done-fg:#FFFFFF;
+  --bubble-in:#1E2944;
+  --band-bg:#1A2644; --band-fg:#F2F4F8; --band-soft:#CDD5E5; --band-muted:#A3AEC6; --band-line:#33416A; --band-chip:#6B7AA3;
+  --i-hr-bg:#22304F; --i-hr-fg:#C9D3EA; --i-web-bg:#3A2C14; --i-web-fg:#F0B353;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:1.0625rem;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+h1,h2,h3{text-wrap:balance}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:3px;border-radius:4px}
+.wrap{
+  max-width:var(--wrap);margin:0 auto;
+  padding-left:max(24px, env(safe-area-inset-left, 0px));
+  padding-right:max(24px, env(safe-area-inset-right, 0px));
+}
+.skip{position:absolute;left:-999px;top:8px;background:var(--btn-bg);color:var(--btn-fg);padding:8px 14px;border-radius:6px;z-index:10}
+.skip:focus{left:12px}
+
+/* Header */
+.site-head{border-bottom:1px solid var(--line)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.brand{font-family:var(--display);font-weight:800;font-size:1.25rem;text-decoration:none;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+.brand-mark{width:30px;height:30px;border-radius:8px;background:var(--btn-bg);color:var(--btn-fg);display:grid;place-items:center;font-size:.8rem;position:relative}
+.brand-mark::after{content:"";position:absolute;top:-3px;right:-3px;width:9px;height:9px;border-radius:50%;background:var(--marigold);border:2px solid var(--paper)}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a:not(.btn){text-decoration:none;color:var(--ink-soft);font-weight:500}
+.nav a:not(.btn):hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  font:600 1rem/1 var(--body);
+  padding:14px 20px;border-radius:999px;text-decoration:none;
+  border:2px solid var(--btn-bg);
+}
+.btn-solid{background:var(--btn-bg);color:var(--btn-fg)}
+.btn-solid:hover{background:var(--ink-soft);border-color:var(--ink-soft)}
+.btn-line{background:transparent;color:var(--ink)}
+.btn-line:hover{background:var(--btn-bg);color:var(--btn-fg)}
+.btn-wa{background:var(--green);border-color:var(--green);color:var(--on-green)}
+.btn-wa:hover{background:var(--green-hover);border-color:var(--green-hover)}
+.btn svg{width:18px;height:18px;flex:none}
+.nav .btn{padding:10px 16px;font-size:.95rem}
+
+/* Hero */
+.hero{padding-block:72px 88px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:center}
+.hello{font-weight:500;color:var(--muted);margin:0 0 18px}
+.hero h1{
+  font-family:var(--display);
+  font-weight:800;
+  font-size:clamp(2.6rem,6.2vw,5.1rem);
+  line-height:.98;
+  letter-spacing:-.035em;
+  margin:0 0 26px;
+  font-variation-settings:"opsz" 96;
+}
+.hero h1 .row{display:block}
+.hero h1 .row-2{color:var(--ink-soft);font-weight:600}
+.lede{font-size:1.2rem;color:var(--ink-soft);max-width:34em;margin:0 0 34px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+
+/* Chat demo */
+.chat{
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  border-radius:28px;
+  padding:18px 18px 22px;
+  max-width:420px;
+  justify-self:end;
+  width:100%;
+  margin:0;
+}
+.chat-top{display:flex;align-items:center;gap:12px;padding:4px 6px 16px;border-bottom:1px solid var(--line);margin-bottom:16px}
+.chat-avatar{width:40px;height:40px;border-radius:50%;background:var(--green);color:var(--on-green);display:grid;place-items:center;font-weight:600;font-size:.9rem}
+.chat-name{font-weight:600;line-height:1.2}
+.chat-status{font-size:.85rem;color:var(--green)}
+.chat-body{display:flex;flex-direction:column;gap:10px;min-height:300px}
+.msg{max-width:84%;padding:10px 14px;border-radius:16px;font-size:.98rem;line-height:1.45}
+.msg.in{background:var(--bubble-in);align-self:flex-start;border-bottom-left-radius:4px;border:1px solid var(--line)}
+.msg.out{background:var(--green-soft);align-self:flex-end;border-bottom-right-radius:4px}
+.msg .who{display:block;font-size:.75rem;font-weight:600;color:var(--green);margin-bottom:2px}
+.typing{align-self:flex-end;background:var(--green-soft);border-radius:16px;padding:12px 16px;display:none;gap:5px}
+.typing span{width:7px;height:7px;border-radius:50%;background:var(--green);opacity:.4;animation:blink 1s infinite}
+.typing span:nth-child(2){animation-delay:.15s}
+.typing span:nth-child(3){animation-delay:.3s}
+@keyframes blink{0%,100%{opacity:.3}50%{opacity:1}}
+.chat-note{font-size:.85rem;color:var(--muted);margin:14px 6px 0}
+.js .msg[data-step]{display:none}
+.js .msg[data-step].shown{display:block;animation:pop .28s ease-out}
+@keyframes pop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* Sections */
+section{scroll-margin-top:16px}
+.band{padding-block:88px;border-top:1px solid var(--line)}
+.band-ink{background:var(--band-bg);color:var(--band-fg);border-top:0}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:48px;align-items:end;margin-bottom:48px}
+.sec-head h2{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(2rem,4vw,3.1rem);line-height:1.02;letter-spacing:-.03em;margin:0;
+}
+.sec-head p{margin:0;color:var(--muted);max-width:36em}
+.band-ink .sec-head p{color:var(--band-muted)}
+
+/* Three sides */
+.sides{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:2px solid var(--ink)}
+.side{padding:28px 28px 8px 0;min-width:0}
+.side + .side{padding-left:28px;border-left:1px solid var(--line)}
+.side h3{font-family:var(--display);font-weight:600;font-size:1.45rem;letter-spacing:-.015em;margin:0 0 10px;line-height:1.15}
+.side p{color:var(--ink-soft);margin:0 0 16px}
+.side ul{list-style:none;padding:0;margin:0}
+.side li{padding:9px 0;border-top:1px solid var(--line);color:var(--ink-soft)}
+.side-icon{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;margin-bottom:18px}
+.side-icon svg{width:24px;height:24px}
+.i-hr{background:var(--i-hr-bg);color:var(--i-hr-fg)}
+.i-ai{background:var(--green-soft);color:var(--green)}
+.i-web{background:var(--i-web-bg);color:var(--i-web-fg)}
+
+/* Work list */
+.work{list-style:none;margin:0;padding:0;border-top:1px solid var(--band-line)}
+.work li{
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(0,1.7fr) 150px;
+  gap:28px;
+  padding:26px 0;
+  border-bottom:1px solid var(--band-line);
+  align-items:baseline;
+}
+.work h3{font-family:var(--display);font-weight:600;font-size:1.4rem;letter-spacing:-.015em;margin:0;line-height:1.2}
+.work .role{display:block;font-family:var(--body);font-size:.95rem;font-weight:400;color:var(--band-muted);margin-top:4px;letter-spacing:0}
+.work p{margin:0;color:var(--band-soft)}
+.work a{color:var(--band-fg);text-underline-offset:4px}
+.work a:hover{color:var(--marigold)}
+.status{justify-self:end;font-size:.88rem;font-weight:600;padding:5px 12px;border-radius:999px;white-space:nowrap}
+.s-live{background:var(--marigold);color:var(--on-marigold)}
+.s-done{background:var(--done-bg);color:var(--done-fg)}
+.s-build{background:transparent;color:var(--band-fg);border:1px solid var(--band-chip)}
+.s-idea{background:transparent;color:var(--band-muted);border:1px dashed var(--band-chip)}
+
+/* Services */
+.services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.service{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:28px;display:flex;flex-direction:column;min-width:0}
+.service h3{font-family:var(--display);font-weight:600;font-size:1.3rem;margin:0 0 10px;letter-spacing:-.01em;line-height:1.2}
+.service p{color:var(--ink-soft);margin:0 0 22px;flex:1}
+.service a{font-weight:600;color:var(--green);text-underline-offset:4px}
+.service a:hover{color:var(--green-hover)}
+
+/* Contact */
+.contact{padding-block:96px 72px;border-top:1px solid var(--line)}
+.contact h2{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(2.4rem,6vw,4.6rem);line-height:.98;letter-spacing:-.035em;margin:0 0 22px;max-width:12em;
+}
+.contact .lede{margin-bottom:40px}
+.reach{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:24px;max-width:980px}
+.reach a{display:block;text-decoration:none;border:2px solid var(--ink);border-radius:20px;padding:24px 26px;min-width:0}
+.reach a:hover{background:var(--btn-bg);color:var(--btn-fg)}
+.reach a:hover .reach-label{color:inherit;opacity:.75}
+.reach-label{display:block;color:var(--muted);font-size:.95rem;margin-bottom:6px}
+.reach-value{font-family:var(--display);font-weight:600;font-size:clamp(1.05rem,2.2vw,1.45rem);letter-spacing:-.01em;overflow-wrap:anywhere}
+
+.site-foot{border-top:1px solid var(--line);padding-block:28px;color:var(--muted);font-size:.95rem}
+.site-foot .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* Responsive */
+@media (max-width:960px){
+  .hero .wrap{grid-template-columns:1fr;gap:48px}
+  .chat{justify-self:start}
+  .sec-head{grid-template-columns:1fr;gap:14px}
+  .sides{grid-template-columns:1fr}
+  .side{padding:28px 0 8px}
+  .side + .side{padding-left:0;border-left:0;border-top:1px solid var(--line)}
+  .services{grid-template-columns:1fr}
+  .work li{grid-template-columns:minmax(0,1fr) auto;gap:10px 20px}
+  .work li p{grid-column:1 / -1;grid-row:2}
+  .status{grid-column:2;grid-row:1}
+}
+@media (max-width:640px){
+  .wrap{
+    padding-left:max(16px, env(safe-area-inset-left, 0px));
+    padding-right:max(16px, env(safe-area-inset-right, 0px));
+  }
+  .nav a:not(.btn){display:none}
+  .hero{padding-block:44px 64px}
+  .band{padding-block:64px}
+  .reach{grid-template-columns:1fr}
+  .lede{font-size:1.1rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Ch Mohsin, home"><span class="brand-mark" aria-hidden="true">CM</span>Ch Mohsin</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a class="btn btn-solid" href="#contact">Contact me</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <p class="hello">Assalam o Alaikum, I'm Ch Mohsin.</p>
+        <h1>
+          <span class="row">I manage people.</span>
+          <span class="row row-2">I build AI that talks to your customers.</span>
+        </h1>
+        <p class="lede">I'm an HR Manager in Pakistan and the founder of NEXORA Software House. I build AI agents for WhatsApp and phone calls, business automations and websites that help small businesses work faster.</p>
+        <div class="cta-row">
+          <a class="btn btn-wa" href="https://wa.me/923135760708?text=Assalam%20o%20Alaikum%20Mohsin%2C%20I%20saw%20your%20portfolio." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.2-.2-.4-.3Z"/></svg>
+            Message on WhatsApp
+          </a>
+          <a class="btn btn-line" href="#work">See my work</a>
+        </div>
+      </div>
+
+      <figure class="chat" aria-label="Example conversation handled by an AI booking agent">
+        <div class="chat-top">
+          <div class="chat-avatar" aria-hidden="true">AI</div>
+          <div>
+            <div class="chat-name">Booking assistant</div>
+            <div class="chat-status">online</div>
+          </div>
+        </div>
+        <div class="chat-body" id="chat">
+          <div class="msg in" data-step="1">Assalam o Alaikum, table for 4 tonight?</div>
+          <div class="msg out" data-step="2"><span class="who">AI agent</span>Walaikum Assalam! Sure. What time would you like, and what name should I book it under?</div>
+          <div class="msg in" data-step="3">8 pm, Hamza</div>
+          <div class="msg out" data-step="4"><span class="who">AI agent</span>Done. Table for 4 at 8:00 pm under Hamza. See you tonight!</div>
+          <div class="typing" id="typing" aria-hidden="true"><span></span><span></span><span></span></div>
+        </div>
+        <figcaption class="chat-note">An example of the reservation agents I build. They answer instantly, collect the details and send the booking to the owner.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band" id="about">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Three sides of my work</h2>
+        <p>My day job is people. My other work is technology. Both are about the same thing: making a business run smoothly so the team and the customers are looked after.</p>
+      </div>
+      <div class="sides">
+        <article class="side">
+          <div class="side-icon i-hr" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7"/><path d="M18 14a6.5 6.5 0 0 1 3.5 6"/></svg></div>
+          <h3>People and HR</h3>
+          <p>As an HR Manager I look after the people side of a working team.</p>
+          <ul>
+            <li>Hiring and onboarding</li>
+            <li>Team structure and roles</li>
+            <li>Staff records and policies</li>
+            <li>Employee relations</li>
+          </ul>
+        </article>
+        <article class="side">
+          <div class="side-icon i-ai" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="12" rx="3"/><path d="M12 7V3.5"/><circle cx="12" cy="3" r="1"/><circle cx="9" cy="13" r="1.2"/><circle cx="15" cy="13" r="1.2"/><path d="M2 12v3M22 12v3"/></svg></div>
+          <h3>AI agents and automation</h3>
+          <p>Assistants that reply, book and follow up so business owners don't have to.</p>
+          <ul>
+            <li>WhatsApp auto-reply agents</li>
+            <li>Voice agents for phone bookings</li>
+            <li>Social media posting automation</li>
+            <li>Prompts and workflows for ChatGPT, Gemini and Claude</li>
+          </ul>
+        </article>
+        <article class="side">
+          <div class="side-icon i-web" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9h18"/><circle cx="6.5" cy="6.5" r=".6" fill="currentColor"/><circle cx="9" cy="6.5" r=".6" fill="currentColor"/><path d="m9 14-2 2 2 2M15 14l2 2-2 2"/></svg></div>
+          <h3>Websites and online presence</h3>
+          <p>Clean, fast websites and profiles that make a business look as good online as it is offline.</p>
+          <ul>
+            <li>Business websites and online stores</li>
+            <li>Content websites</li>
+            <li>LinkedIn profile and content management</li>
+            <li>Digital marketing visuals</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-ink" id="work">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Selected work</h2>
+        <p>Things I've built, launched or am building right now. Each one has a status so you know exactly where it stands.</p>
+      </div>
+      <ul class="work">
+        <li>
+          <h3>NEXORA Software House <span class="role">Founder</span></h3>
+          <p>Software house and academy offering AI agents and automation, web development, mobile apps and digital marketing, plus courses on campus and online. <a href="https://nexora-software-house.netlify.app" target="_blank" rel="noopener">Visit the website</a></p>
+          <span class="status s-live">Live</span>
+        </li>
+        <li>
+          <h3>Recipe Atlas <span class="role">Website</span></h3>
+          <p>A recipe website with famous dishes from almost every country in the world, each with real photos.</p>
+          <span class="status s-done">Completed</span>
+        </li>
+        <li>
+          <h3>Restaurant booking voice agent <span class="role">AI voice agent</span></h3>
+          <p>A phone agent that takes table reservations in English. It collects the caller's name, number, date and time, then emails the booking to the restaurant.</p>
+          <span class="status s-done">Client project</span>
+        </li>
+        <li>
+          <h3>WhatsApp AI agent <span class="role">AI automation</span></h3>
+          <p>Replies to customer chats on WhatsApp automatically, built for my own business and to offer to clients.</p>
+          <span class="status s-build">In progress</span>
+        </li>
+        <li>
+          <h3>AI Prompts and Guides <span class="role">Website</span></h3>
+          <p>Ready-to-copy prompts for ChatGPT, Gemini and Claude for images, video, students and business, each shown with the result it produces.</p>
+          <span class="status s-build">In progress</span>
+        </li>
+        <li>
+          <h3>Free online tools <span class="role">Website</span></h3>
+          <p>Free calculators and converters in multiple languages, built for people searching worldwide.</p>
+          <span class="status s-build">In progress</span>
+        </li>
+        <li>
+          <h3>AI voice receptionist <span class="role">SaaS product</span></h3>
+          <p>A subscription product that answers business calls, books appointments and passes on messages.</p>
+          <span class="status s-idea">Planning</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band" id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>How I can help your business</h2>
+        <p>Tell me what's slowing you down. I'll suggest the simplest thing that fixes it, and build it.</p>
+      </div>
+      <div class="services">
+        <article class="service">
+          <h3>AI agent for your business</h3>
+          <p>A WhatsApp or phone agent that answers customers, takes bookings and sends you the details, any time of day.</p>
+          <a href="https://wa.me/923135760708?text=Hi%20Mohsin%2C%20I%20want%20an%20AI%20agent%20for%20my%20business." target="_blank" rel="noopener">Ask about an AI agent</a>
+        </article>
+        <article class="service">
+          <h3>Website for your business</h3>
+          <p>A professional website or online store that loads fast, works on every phone and brings you enquiries.</p>
+          <a href="https://wa.me/923135760708?text=Hi%20Mohsin%2C%20I%20need%20a%20website%20for%20my%20business." target="_blank" rel="noopener">Ask about a website</a>
+        </article>
+        <article class="service">
+          <h3>LinkedIn management</h3>
+          <p>Profile setup and optimisation, regular posts and engagement, so the right people find you and trust you.</p>
+          <a href="https://wa.me/923135760708?text=Hi%20Mohsin%2C%20I%20want%20help%20with%20my%20LinkedIn." target="_blank" rel="noopener">Ask about LinkedIn</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Let's work together.</h2>
+      <p class="lede">For a project, a job opportunity or just a question, message me on WhatsApp or send an email. I usually reply the same day.</p>
+      <div class="reach">
+        <a href="https://wa.me/923135760708" target="_blank" rel="noopener">
+          <span class="reach-label">WhatsApp</span>
+          <span class="reach-value">+92 313 5760708</span>
+        </a>
+        <a href="mailto:mohsinshabbir010@gmail.com">
+          <span class="reach-label">Email</span>
+          <span class="reach-value">mohsinshabbir010<wbr>@gmail.com</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>&copy; <span id="year">2026</span> Ch Mohsin</span>
+    <span>Made in Pakistan</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.getElementById('year').textContent = new Date().getFullYear();
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) return;
+  document.documentElement.classList.add('js');
+  var msgs = Array.prototype.slice.call(document.querySelectorAll('#chat .msg[data-step]'));
+  var typing = document.getElementById('typing');
+  var chat = document.getElementById('chat');
+  var i = 0;
+  function next(){
+    if (i >= msgs.length) return;
+    var m = msgs[i];
+    var isAgent = m.classList.contains('out');
+    if (isAgent){
+      chat.insertBefore(typing, m);
+      typing.style.display = 'flex';
+      setTimeout(function(){
+        typing.style.display = 'none';
+        m.classList.add('shown');
+        i++; setTimeout(next, 900);
+      }, 1100);
+    } else {
+      m.classList.add('shown');
+      i++; setTimeout(next, 700);
+    }
+  }
+  setTimeout(next, 500);
+})();
+</script>
+</body>
+</html>
